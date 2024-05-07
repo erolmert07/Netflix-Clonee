@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block body %}
+
+<form method="POST" class="w-50 mt-5 mb-5 m-auto text-light" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form}} 
+    <button type="submit" class="btn btn-danger" >Profil Oluştur</button>
+</form>
+
+{% endblock body %}
